@@ -5,8 +5,8 @@
      http://www.springframework.org/schema/beans/spring-beans.xsd
 ">
   <bean id="pb" class="java.lang.ProcessBuilder">
-     <constructor-arg value="open"/>
-     <constructor-arg value="/System/Applications/Calculator.app"/>
+     <constructor-arg index="0" value="open"/>
+     <constructor-arg index="1" value="/System/Applications/Calculator.app"/>
      <property name="whatever" value="#{ pb.start() }"/>
   </bean>
 </beans>
